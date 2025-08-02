@@ -9,36 +9,36 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Ghibli Art Generator",
+    title: "Snap AI ",
     description:
-      "Transform photos or text into Studio Ghibli-style artwork using a custom AI model with a React frontend and Spring Boot backend.",
-    github: "https://github.com/sanjaykumar200599/pixelscribe-ai",
-    demo: "https://pixelscribe-ai.vercel.app",
-    image: "/projects/ghibli.png",
+      "Snap AI is an AI-powered image editor inspired by Lightroom, built using Next.js, JavaScript, Fabric.js, Image.io, and Unsplash AI. It offers users advanced editing tools like background removal.",
+    github: "https://github.com/sanjaykumar200599/SnapAI",
+    demo: "https://snap-ai-image-editor.vercel.app/",
+    image: "/snapai.png",
   },
   {
     title: "Crypto Crash Game",
     description:
-      "A real-time multiplayer crypto prediction game with WebSocket integration and CoinGecko API for live price feeds.",
-    github: "https://github.com/sanjaykumar200599/Crypto-crash-backend",
-    demo: "",
-    image: "/projects/crypto.png",
+      "A real-time multiplayer backend for a Crypto Crash betting game built with Node.js, Express, WebSocket, MongoDB, and Binance Api.",
+    github: "https://github.com/sanjaykumar200599/Crypto_crash_game",
+    demo: "https://crypto-crash-backend.vercel.app/",
+    image: "/crashgame.png",
   },
   {
-    title: "Arecanut Disease Classifier",
+    title: "Career Cart",
     description:
-      "Machine Learning-based web app to detect and classify diseases in Arecanut plants using CNN and OpenCV.",
-    github: "https://github.com/sanjaykumar200599/Arecanut-Leaf-Disease",
-    demo: "",
-    image: "/projects/arecanut.png",
+      "Careercart is a modern, AI-powered platform that helps job seekers build professional resumes, create tailored CVs, and prepare for interviews with curated mock questions.",
+    github: "https://github.com/sanjaykumar200599/Careercart",
+    demo: "https://ai-career-coach-sage.vercel.app/",
+    image: "/resume.png",
   },
   {
-    title: "Portfolio Website",
+    title: "Pixel Scribe",
     description:
-      "My personal developer portfolio built with Next.js, Tailwind CSS, and TypeScript showcasing projects and skills.",
-    github: "https://github.com/sanjaykumar200599/portfolio",
-    demo: "https://sanjaykumar.dev",
-    image: "/projects/portfolio.png",
+      "PixelScribe is an AI-powered web application that transforms natural language text into visually rich images using advanced text-to-image generation models which is built with Spring Boot.",
+    github: "https://github.com/sanjaykumar200599/Pixelscribe",
+    demo: "https://pixelscribe-frontend.vercel.app/",
+    image: "/creatify.png",
   },
 ];
 
@@ -57,30 +57,32 @@ export default function Projects() {
           >
             <Card className="bg-[#111827] text-gray-300 rounded-xl shadow-md border border-gray-800 hover:border-cyan-400 transition-all duration-300">
               <CardContent className="p-6">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  width={400}
-                  height={200}
-                  className="rounded-md object-cover mb-4"
-                />
-                <h3 className="text-xl font-semibold text-cyan-400 mb-2">
-                  {project.title}
-                </h3>
-                <p className="text-sm leading-relaxed mb-4">
-                  {project.description}
-                </p>
-                <div className="flex gap-4">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer">
-                    <FaGithub className="text-xl hover:text-cyan-400" />
-                  </a>
-                  {project.demo && (
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                      <FiExternalLink className="text-xl hover:text-cyan-400" />
+                  <div className="w-full h-[200px] mb-4 overflow-hidden rounded-md">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      width={400}
+                      height={200}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-xl font-semibold text-cyan-400 mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed mb-4">
+                    {project.description}
+                  </p>
+                  <div className="flex gap-4">
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <FaGithub className="text-xl hover:text-cyan-400" />
                     </a>
-                  )}
-                </div>
-              </CardContent>
+                    {project.demo && (
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                        <FiExternalLink className="text-xl hover:text-cyan-400" />
+                      </a>
+                    )}
+                  </div>
+                </CardContent>
             </Card>
           </motion.div>
         ))}
