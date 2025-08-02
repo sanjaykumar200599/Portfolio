@@ -45,9 +45,11 @@ const projects = [
 export default function Projects() {
   return (
     <section className="py-16 px-4 md:px-12 w-full bg-muted/30" id="projects">
-      <h2 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-10">
+      <h2 className="text-4xl text-center sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-10">
         Projects
       </h2>
+      <div className="w-24 h-1 bg-neutral-300 mx-auto mb-12 rounded-full"></div>
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {projects.map((project, idx) => (
           <motion.div
