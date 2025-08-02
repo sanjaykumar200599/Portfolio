@@ -11,7 +11,7 @@ const projects = [
   {
     title: "Snap AI ",
     description:
-      "Snap AI is an AI-powered image editor inspired by Lightroom, built using Next.js, JavaScript, Fabric.js, Image.io, and Unsplash AI. It offers users advanced editing tools like background removal.",
+      "Snap AI is an AI-powered image editor inspired by Lightroom, built using Next.js, Js, Fabric.js, Image.io, and Unsplash AI. It offers users advanced editing tools like background removal.",
     github: "https://github.com/sanjaykumar200599/SnapAI",
     demo: "https://snap-ai-image-editor.vercel.app/",
     image: "/snapai.png",
