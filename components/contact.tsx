@@ -42,6 +42,7 @@ const Contact = () => {
         toast({
           title: "✅ Your message has been sent!",
           description: "Thank you for reaching out. I’ll reply at the earliest.",
+          duration: 5000,
         });
         setFormData({ name: "", email: "", message: "" });
       })
@@ -49,6 +50,7 @@ const Contact = () => {
         toast({
           title: "❌ Failed to send message",
           description: "Please try again later.",
+          duration: 5000,
         });
       });
   };
