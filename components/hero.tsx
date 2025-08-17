@@ -44,7 +44,7 @@ const HeroSection = () => {
               Full Stack Developer
             </h2>
             <p className="text-lg text-foreground/80 max-w-xl leading-relaxed mb-8">
-              A passionate developer with expertise in Reactjs, Next.js, Tailwind CSS, and backend technologies. Enthusiastic about building robust, scalable, and elegant full-stack applications that solve real-world problems.
+              A passionate developer with expertise in Reactjs, Nextjs, Tailwind CSS, and backend technologies. Enthusiastic about building robust, scalable, and elegant full-stack applications that solve real-world problems.
             </p>
           </motion.div>
 
